@@ -17,9 +17,15 @@ body{
 }
 
 nav {
-    background-color: grey;
+    position: relative;
+    background-color: black;
     width: 250px;
     height: 100%;
+    padding: 30px 20px 10px ;
+}
+
+nav:not(h2) {
+    color: grey;
 }
 
 main {
@@ -30,3 +36,78 @@ footer {
     height: 100px;
     background-color: blueviolet;
 }
+
+/* nav */
+
+#logo img {
+    width: 140px;
+}
+
+/*  navigazione principale  */
+nav ul {
+    list-style-type: none;
+    margin: 20px 0;
+}
+
+nav ul li {
+    font-size: 1em;
+   /*  font-weight: bold; */
+    padding: 8px 0;
+}
+
+
+
+li i {
+    font-size: 1.7em;
+    margin-right: 7px;
+}
+/*  /navigazione principale  */
+
+/* navigazine playlist */
+
+h2 {
+    color: white;
+    font-size: 20px;
+}
+
+/* #lista-playlist {
+    overflow-y: auto;
+} */
+#crea-playlist {
+    margin: 10px 0;
+}
+
+#crea-playlist i {
+    font-size: 2.5em;
+}
+
+/* /navigazine playlist */
+
+/* profilo */
+#container-profilo {
+    height: 70px;
+    position: absolute;
+    bottom: 10px;
+    width: 80%;
+}
+
+#container-profilo div:first-child {
+    font-size: .7em;
+    padding-bottom: 7px;
+}
+
+#container-profilo div:last-child {
+    font-weight: bold;
+    color: white;
+    padding: 10px 0;
+    border-top: grey solid 1px;
+}
+
+.fa-user-circle {
+    background-color: grey;
+    border-radius: 50%;
+    font-size: 1.5em;
+}
+
+
+/* /profilo */
