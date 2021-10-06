@@ -28,6 +28,7 @@ nav {
 main {
     width: calc(100% - 250px);
     background-color: #141922;
+    position: relative;
 }
 
 footer {
@@ -192,6 +193,11 @@ nav h2 {
     justify-content: flex-end;
     align-items: center;
     background-color: rgba(0, 0, 0, .4);
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: calc(100% - 250px);
+
 }
 
 #btn {
@@ -213,6 +219,10 @@ nav h2 {
 
 
 /* barra di navigazione */
+#barra-navigazione-main  {
+    margin: 110px auto 0;
+}
+
 #barra-navigazione-main ul {
     margin: 30px auto;
     width: 70%;
@@ -223,6 +233,7 @@ nav h2 {
 
 #barra-navigazione-main ul li {
     list-style-type: none;
+    padding: 10px 0;
 }
 
 #barra-navigazione-main ul li a {
@@ -257,6 +268,7 @@ main h2 {
 .row {
     display: flex;
 }
+
 .container-img {
     position: relative;
 }
@@ -309,7 +321,7 @@ main h2 {
     text-align: center;
     font-size: .7em;
     display: block;
-    margin: 10px 0;
+    margin: 10px 0 0;
 }
 /* /playlist */
 
@@ -327,11 +339,25 @@ main h2 {
         flex-wrap: wrap;
     }
 
-    #barra-navigazione-main ul li {
-        padding: 10px 0;
+    .row {
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
 
+    .playlist img {
+        min-width: 120px;
+        max-width: 120px;
+    }
 
+    .descrizione-playlist {
+        margin: 20px 0 0;
+        max-width: 120px;
+    }
+
+    .playlist {
+        width: calc(100% / 6 (- 60px));
+        margin: 20px 10px 0 0; 
+    }
 }
 /* /versione md 878px */
 
@@ -350,6 +376,11 @@ main h2 {
     
     main {
         width: calc(100% - 50px);
+    }
+
+    #container-upgrade {
+        width: calc(100% - 50px);
+    
     }
 
 }
