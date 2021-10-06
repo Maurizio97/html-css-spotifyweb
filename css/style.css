@@ -148,7 +148,7 @@ h2 {
     }
     nav {
         width: 50px;
-        padding: 20px 0 0;
+        padding: 0;
         text-align: center;
         overflow-x: hidden;
         display: flex;
@@ -157,8 +157,16 @@ h2 {
         align-items: center;
     }
 
+    nav ul {
+        margin: 3px 0;
+    }
+    
     nav i {
         margin: 0;
+    }
+
+    nav ul li {
+        padding: 3px 0;
     }
 
 }
