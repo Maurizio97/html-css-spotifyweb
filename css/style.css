@@ -13,7 +13,8 @@ body{
 }
 
 #wrapper {
-    height: calc(100vh - 90px);
+    height: calc(100vh - 100px);
+    display: flex;
 }
 
 nav {
@@ -24,12 +25,9 @@ nav {
     padding: 30px 20px 10px ;
 }
 
-nav:not(h2) {
-    color: grey;
-}
-
 main {
     width: calc(100% - 250px);
+    background-color: blue;
 }
 
 footer {
@@ -41,6 +39,11 @@ footer {
 
 #logo img {
     width: 140px;
+    padding-left: 20px;
+}
+
+#logo-small {
+    display: none;
 }
 
 /*  navigazione principale  */
@@ -51,15 +54,23 @@ nav ul {
 
 nav ul li {
     font-size: 1em;
-   /*  font-weight: bold; */
     padding: 8px 0;
 }
 
-
+nav a {
+    text-decoration: none;
+    color: grey;
+}
 
 li i {
     font-size: 1.7em;
     margin-right: 7px;
+}
+
+#home {
+    border-left: 2px solid #adff2f ;
+    margin-left: -20px ;
+    padding-left: 18px;
 }
 /*  /navigazione principale  */
 
@@ -70,15 +81,22 @@ h2 {
     font-size: 20px;
 }
 
-/* #lista-playlist {
+#lista-playlist {
     overflow-y: auto;
-} */
+    color: grey;
+    min-height: 200px;
+}
+
 #crea-playlist {
     margin: 10px 0;
+    color: grey;
+    display: flex;
+    align-items: center;
 }
 
 #crea-playlist i {
     font-size: 2.5em;
+    margin-right: 8px;
 }
 
 /* /navigazine playlist */
@@ -86,9 +104,10 @@ h2 {
 /* profilo */
 #container-profilo {
     height: 70px;
-    position: absolute;
+   /*  position: absolute; */
     bottom: 10px;
     width: 80%;
+    color: grey;
 }
 
 #container-profilo div:first-child {
@@ -107,6 +126,41 @@ h2 {
     background-color: grey;
     border-radius: 50%;
     font-size: 1.5em;
+}
+
+/* version 552px */
+@media all and (max-width:552px) {
+    
+    #logo,
+    h2,
+    #crea-playlist,
+    #lista-playlist,
+    span {
+        display: none;
+    }
+
+    #logo-small {
+        display: block;
+    }
+
+    #logo-small img {
+        width: 2em;
+    }
+    nav {
+        width: 50px;
+        padding: 20px 0 0;
+        text-align: center;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav i {
+        margin: 0;
+    }
+
 }
 
 
