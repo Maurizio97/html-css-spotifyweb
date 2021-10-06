@@ -27,12 +27,13 @@ nav {
 
 main {
     width: calc(100% - 250px);
-    background-color: blue;
+    background-color: #141922;
 }
 
 footer {
     height: 100px;
     background-color: blueviolet;
+    z-index: 2;
 }
 
 /* nav */
@@ -62,6 +63,11 @@ nav a {
     color: grey;
 }
 
+#crea-playlist a:hover ,
+nav a:hover {
+    color: white;
+} 
+
 li i {
     font-size: 1.7em;
     margin-right: 7px;
@@ -87,7 +93,7 @@ h2 {
     min-height: 200px;
 }
 
-#crea-playlist {
+#crea-playlist a {
     margin: 10px 0;
     color: grey;
     display: flex;
@@ -100,6 +106,7 @@ h2 {
 }
 
 /* /navigazine playlist */
+
 
 /* profilo */
 #container-profilo {
@@ -127,8 +134,10 @@ h2 {
     border-radius: 50%;
     font-size: 1.5em;
 }
+/* /profilo */
 
-/* version 552px */
+
+/* version 552px nav */
 @media all and (max-width:552px) {
     
     #logo,
@@ -160,7 +169,7 @@ h2 {
     nav ul {
         margin: 3px 0;
     }
-    
+
     nav i {
         margin: 0;
     }
@@ -170,6 +179,63 @@ h2 {
     }
 
 }
+/* version 552px nav */
 
 
-/* /profilo */
+/* parte principale */
+
+/* bottone upgrade */
+#container-upgrade {
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+#btn {
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-right: 20px;
+}
+
+#btn a {
+    text-decoration: none;
+    color: white;
+}
+
+#container-upgrade:hover #btn {
+    transform: scale(1.1);
+}
+/* /bottone upgrade */
+
+/* barra di navigazione */
+#barra-navigazione-main ul{
+    margin: 30px auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#barra-navigazione-main ul li {
+    list-style-type: none;
+}
+
+#barra-navigazione-main ul li a {
+    text-decoration: none;
+    color: grey;
+    font-weight: bold;
+}
+
+#barra-navigazione-main a:hover {
+    color: white;
+}
+
+#linea {
+    border: 1px solid #adff2f;
+    width: 38px;
+    margin: 2px auto;
+}
+
+/* /barra di navigazione */
