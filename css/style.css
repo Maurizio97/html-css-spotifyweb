@@ -82,9 +82,9 @@ li i {
 
 /* navigazine playlist */
 
-h2 {
+nav h2 {
     color: white;
-    font-size: 20px;
+    font-size: 1em;
 }
 
 #lista-playlist {
@@ -182,6 +182,7 @@ h2 {
 /* version 552px nav */
 
 
+
 /* parte principale */
 
 /* bottone upgrade */
@@ -209,6 +210,7 @@ h2 {
     transform: scale(1.1);
 }
 /* /bottone upgrade */
+
 
 /* barra di navigazione */
 #barra-navigazione-main ul {
@@ -239,9 +241,67 @@ h2 {
     width: 38px;
     margin: 2px auto;
 }
+/* /barra di navigazione */
+
+/* playlist */
+
+#centratura {
+    margin: 40px 25px;
+}
+
+main h2 {
+    color: white;
+    font-size: 1.4em;
+}
+
+.row {
+    display: flex;
+}
+.container-img {
+    position: relative;
+}
+
+.layover {
+    background-color: rgba(0, 0, 0, .4);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.playlist {
+    width: calc(100% / 6 (- 120px));
+    margin: 20px 20px 20px 0;
+    
+}
+
+.playlist img {
+    width: 100%;
+}
+
+.title-songs {
+    text-align: center;
+    color: white;
+    font-size: .9em;
+    margin: 20px 0 ;
+}
+
+.subtitle {
+    color: grey;
+    text-align: center;
+    font-size: .7em;
+    display: block;
+    margin: 10px 0;
+}
+/* /playlist */
+
+
 
 /* versione md 878px */
 @media all and (max-width:878px) {
+
+    /* barra di navigazione */
     #barra-navigazione-main ul {
         margin: 30px auto;
         width: 90%;
