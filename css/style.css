@@ -262,29 +262,46 @@ main h2 {
 }
 
 .layover {
+    display: none;
     background-color: rgba(0, 0, 0, .4);
     height: 100%;
     width: 100%;
     position: absolute;
     right: 0;
     top: 0;
+    justify-content: center;
+    align-items: center;
 }
+
+.layover i {
+    font-size: 4.5em;
+    color: white;
+}
+
+.playlist:hover .layover {
+    display: flex;
+}
+
 
 .playlist {
     width: calc(100% / 6 (- 120px));
-    margin: 20px 20px 20px 0;
-    
+    margin: 20px 20px 20px 0; 
 }
 
 .playlist img {
     width: 100%;
 }
 
+.descrizione-playlist {
+    margin: 20px 0 ;
+    max-width: 230px;
+}
+
 .title-songs {
-    text-align: center;
     color: white;
     font-size: .9em;
-    margin: 20px 0 ;
+    margin: 10px 0 ;
+    text-align: center;
 }
 
 .subtitle {
