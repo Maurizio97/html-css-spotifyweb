@@ -211,11 +211,12 @@ h2 {
 /* /bottone upgrade */
 
 /* barra di navigazione */
-#barra-navigazione-main ul{
+#barra-navigazione-main ul {
     margin: 30px auto;
     width: 70%;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 #barra-navigazione-main ul li {
@@ -226,6 +227,7 @@ h2 {
     text-decoration: none;
     color: grey;
     font-weight: bold;
+    font-size: .9em;
 }
 
 #barra-navigazione-main a:hover {
@@ -237,5 +239,43 @@ h2 {
     width: 38px;
     margin: 2px auto;
 }
+
+/* versione md 878px */
+@media all and (max-width:878px) {
+    #barra-navigazione-main ul {
+        margin: 30px auto;
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    #barra-navigazione-main ul li {
+        padding: 10px 0;
+    }
+
+
+}
+/* /versione md 878px */
+
+
+/* versione s 639px */
+@media all and (max-width:639px) {
+   
+
+
+}
+/* /versione s 639px */
+
+
+/* versione xs 552px */
+@media all and (max-width:552px) {
+    
+    main {
+        width: calc(100% - 50px);
+    }
+
+}
+/* /versione xs 552px */
 
 /* /barra di navigazione */
