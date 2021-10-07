@@ -47,8 +47,12 @@ main {
 
 footer {
     height: 100px;
-    background-color: blueviolet;
+    background-color: #282828;
     z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
 
 /* nav */
@@ -463,6 +467,120 @@ main h2 {
 
 
 /* footer */
+footer #cover-song {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 20px 0 0;
+}
+
+/* titolo canzone */
+#cover-song img {
+    width: 60px;
+}
+
+#cover-song i {
+    color: grey;
+    font-size: 1em;
+    padding: 0 10px;
+}
+
+#cover-song i:hover {
+    color: white;
+   cursor: pointer;
+}
 
 
+#cover-song div:nth-child(2) {
+    margin: 0 20px;
+}
+
+#cover-song h4 {
+    color: white;
+}
+
+#cover-song span {
+    color: grey;
+    font-size: .7em;
+}
+
+/* player principale */
+#player i {
+    font-size: 1em;
+    color: white;
+    padding: 0 12px;
+}
+#player div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+#player i:nth-child(3) {
+    font-size: 1.6em;
+}
+
+/* barra dei secondi */
+#player .barra.white {
+    max-width: 60px;
+}
+
+#player .barra.white {
+    max-width: 60px;
+}
+
+/* gestione audio e riproduzione su altri dispositivi */
+#audio {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+#audio i {
+    color: white;
+    font-size: 1em;
+    padding: 0 10px;
+}
+
+#audio .barra.white {
+    width: 30px;
+}
+
+#audio .barra.grey  {
+    width: 40px;
+}
+
+.barra.white {
+    height: 3px;
+    background-color: white;
+}
+
+.barra.grey {
+    height: 3px;
+    background-color: grey;
+}
+
+.barraflex {
+    display: flex;
+    position: relative;
+    padding: 7px 0;
+}
+
+.regolatore {
+    display: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: 28px;
+    top:4px;
+}
+
+.barraflex:hover .regolatore {
+    display: block;
+}
+
+.barraflex:hover .white {
+    background-color: #adff2f;
+}
 /* /footer */
