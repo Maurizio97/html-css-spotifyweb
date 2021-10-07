@@ -18,7 +18,8 @@ body{
 }
 
 nav {
-    position: relative;
+    display: flex;
+    flex-direction: column;
     background-color: black;
     width: 250px;
     height: 100%;
@@ -93,9 +94,20 @@ nav h2 {
 #lista-playlist {
     overflow-y: auto;
     color: grey;
-    min-height: 70px;
-    height: 55%;
+    min-height: 30px;
+    flex-grow: 2;
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#lista-playlist::-webkit-scrollbar {
+    display: none;
+}
+  
+/* Hide scrollbar for IE, Edge and Firefox */
+#lista-playlist {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+} 
 
 #crea-playlist a {
     margin: 10px 0;
@@ -200,7 +212,7 @@ nav h2 {
     right: 0;
     top: 0;
     width: calc(100% - 250px);
-    z-index: 2;
+    z-index: 1;
 
 }
 
