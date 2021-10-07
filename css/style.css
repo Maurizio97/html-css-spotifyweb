@@ -505,6 +505,20 @@ footer #cover-song {
 }
 
 /* player principale */
+#player {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#player .barraflex{
+    width: 50%;
+    align-items: center;
+}
+
+
 #player i {
     font-size: 1em;
     color: white;
@@ -521,11 +535,17 @@ footer #cover-song {
 
 /* barra dei secondi */
 #player .barra.white {
-    max-width: 60px;
+    width: 30%;
 }
 
-#player .barra.white {
-    max-width: 60px;
+#player .barra.grey {
+    width: 70%;
+}
+
+
+#player .regolatore {
+    left: 223px;
+    top: 11px;
 }
 
 /* gestione audio e riproduzione su altri dispositivi */
