@@ -23,6 +23,7 @@ nav {
     width: 250px;
     height: 100%;
     padding: 30px 20px 10px ;
+    overflow-y: hidden;
 }
 
 main {
@@ -92,7 +93,8 @@ nav h2 {
 #lista-playlist {
     overflow-y: auto;
     color: grey;
-    min-height: 200px;
+    min-height: 70px;
+    height: 55%;
 }
 
 #crea-playlist a {
@@ -335,7 +337,9 @@ main h2 {
 }
 /* /playlist */
 
+
 /* terza fila immagini tonde */
+
 .container-img.tonda {
     border-radius: 50%;
 }
@@ -347,9 +351,9 @@ main h2 {
 .container-img.tonda .layover {
     border-radius: 50%;
 }
-
-
 /* /terza fila immagini tonde */
+
+
 
 /* versione md 878px */
 @media all and (max-width:878px) {
@@ -433,3 +437,9 @@ main h2 {
 /* /versione xs 552px */
 
 /* /barra di navigazione */
+
+
+/* footer */
+
+
+/* /footer */
