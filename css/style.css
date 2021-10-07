@@ -143,7 +143,7 @@ nav h2 {
 @media all and (max-width:552px) {
     
     #logo,
-    h2,
+    nav h2,
     #crea-playlist,
     #lista-playlist,
     span {
@@ -198,6 +198,7 @@ nav h2 {
     right: 0;
     top: 0;
     width: calc(100% - 250px);
+    z-index: 2;
 
 }
 
@@ -270,6 +271,14 @@ main h2 {
     display: flex;
 }
 
+.container-titolo {
+    margin-top: 50px;
+}
+
+.container-titolo .subtitle {
+    text-align: left;
+}
+
 .container-img {
     position: relative;
 }
@@ -326,7 +335,21 @@ main h2 {
 }
 /* /playlist */
 
+/* terza fila immagini tonde */
+.container-img.tonda {
+    border-radius: 50%;
+}
 
+.container-img.tonda img {
+    border-radius: 50%;
+}
+
+.container-img.tonda .layover {
+    border-radius: 50%;
+}
+
+
+/* /terza fila immagini tonde */
 
 /* versione md 878px */
 @media all and (max-width:878px) {
@@ -403,8 +426,9 @@ main h2 {
     }
 
     .playlist img {
-        max-width: 180px;
+        max-width: 220px;
     }
+
 }
 /* /versione xs 552px */
 
